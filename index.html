@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Truck</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <span>Coffee Truck</span>
+    </header>
+    <div class="buttons">
+      <button class="home_btn">홈</button>
+      <button class="order_progress">주문현황</button>
+    </div>
+    <main>
+      <div class="info">
+        <div class="name">
+          <span>이름</span>
+          <input class="input_name" type="text" placeholder="부서명-이름" />
+        </div>
+        <div class="phone">
+          <span>연락처</span>
+          <input class="input_phone" type="text" placeholder="010-0000-0000" />
+        </div>
+      </div>
+      <div class="menu">
+        <div class="menu_popular">
+          <span class="popular_title">인기메뉴</span>
+          <ul class="popular_ul"></ul>
+        </div>
+        <div class="menu_all">
+          <span class="all_title">전체메뉴</span>
+          <ul class="all_ul"></ul>
+        </div>
+      </div>
+      <div class="options">
+        <div class="options_size">
+          <span class="size_title">사이즈</span>
+          <div class="size_content">
+            <span
+              ><input name="menuSize" type="radio" value="short" checked />
+              short</span
+            >
+            <span
+              ><input name="menuSize" type="radio" value="tall" /> tall</span
+            >
+            <span
+              ><input name="menuSize" type="radio" value="grande" />
+              grande</span
+            >
+            <span
+              ><input name="menuSize" type="radio" value="venti" /> venti</span
+            >
+          </div>
+        </div>
+        <div class="options_items hidden">
+          <span>옵션</span>
+          <div class="options_content"></div>
+        </div>
+        <div class="options_request">
+          <span>요청사항</span>
+          <input class="request_input" type="text" />
+        </div>
+      </div>
+      <button class="order_btn">주문하기</button>
+    </main>
+    <div class="progress hidden">
+      <span class="progress_title">주문현황</span>
+      <div class="progress_detail">
+        <div class="progress_ready">
+          <span class="ready_title">준비중</span>
+        </div>
+        <div class="progress_complete">
+          <span class="complete_title">완료</span>
+        </div>
+      </div>
+    </div>
+    <script src="dataOrder.js"></script>
+    <script src="dataMenu.js"></script>
+    <script src="dataStore.js"></script>
+    <script src="menu.js"></script>
+    <script src="progress.js"></script>
+    <!-- <script src="mongodb.js"></script> -->
+    <script src="main.js"></script>
+  </body>
+</html>

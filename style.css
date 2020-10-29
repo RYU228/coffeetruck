@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 360px;
+  margin: 20px auto;
+}
+
+.buttons {
+  display: flex;
+}
+
+.home_btn,
+.order_progress {
+  width: 50%;
+}
+
+main {
+  border: 1px solid gray;
+}
+
+header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.info {
+  margin-top: 10px;
+  width: 90%;
+}
+
+.name span {
+  display: block;
+  margin: 0 10px;
+}
+
+.name input {
+  margin: 0 10px;
+  width: 100%;
+}
+
+.phone {
+  margin-top: 10px;
+}
+
+.phone span {
+  display: block;
+  margin: 0 10px;
+}
+
+.phone input {
+  margin: 0 10px;
+  width: 100%;
+}
+
+.menu {
+  margin-top: 10px;
+  width: 90%;
+}
+
+.popular_title {
+  margin: 0 10px;
+}
+
+.menu_popular ul {
+  width: 100%;
+  height: 150px;
+  margin: 0 10px;
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+}
+
+.menu_popular li {
+  list-style: none;
+  min-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  transition: transfrom 200ms;
+  text-align: center;
+  line-height: 100px;
+}
+
+.menu_popular li + li {
+  margin-left: 15px;
+}
+
+.popular_li:hover {
+  transform: scale(1.1);
+}
+
+/*.li_check {
+  display: none;
+}
+
+ .popular_li:hover .li_check {
+    text-align: end;
+    position: relative;
+    top: 5px;
+    right:5px;
+} */
+
+.all_title {
+  margin: 0 10px;
+}
+
+.menu_all ul {
+  width: 100%;
+  height: 150px;
+  margin: 0 10px;
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+}
+
+.menu_all li {
+  list-style: none;
+  min-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  transition: transfrom 200ms;
+  text-align: center;
+  line-height: 100px;
+}
+
+.menu_all li + li {
+  margin-left: 15px;
+}
+
+.all_li:hover {
+  transform: scale(1.1);
+}
+
+.options {
+  margin-top: 10px;
+}
+
+.options_size {
+  margin: 0 10px;
+}
+
+.size_title {
+  display: block;
+}
+
+.size_content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.size_content input {
+  vertical-align: middle;
+}
+
+.options_items {
+  margin: 0 10px;
+  margin-top: 10px;
+}
+
+.options_request {
+  margin: 0 10px;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.options_request span {
+  display: block;
+}
+
+.options_request input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.order_btn {
+  width: 100%;
+}
+
+.progress {
+  background-color: black;
+  color: white;
+  height: 250px;
+}
+
+.progress_title {
+  display: block;
+  text-align: center;
+}
+
+.progress_detail {
+  display: flex;
+}
+
+.ready_title {
+  display: block;
+  text-align: center;
+}
+
+.progress_ready {
+  flex: 1 1 auto;
+  margin-left: 5px;
+}
+
+.progress_ready span {
+  display: block;
+}
+
+.progress_complete {
+  flex: 1 1 auto;
+  margin-left: 5px;
+}
+
+.progress_complete span {
+  display: block;
+}
+
+.complete_title {
+  display: block;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
